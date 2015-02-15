@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ng-table</artifactId>
-    <version>0.4.3-SNAPSHOT</version>
+    <version>0.4.4-SNAPSHOT</version>
     <name>ngTable</name>
     <description>WebJar for ngTable</description>
     <url>http://webjars.org</url>
