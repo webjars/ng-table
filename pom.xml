@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ng-table</artifactId>
-    <version>1.0.0-beta.9-SNAPSHOT</version>
+    <version>1.0.0-beta.9</version>
     <name>ngTable</name>
     <description>WebJar for ngTable</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/ng-table</url>
         <connection>scm:git:https://github.com/webjars/ng-table.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ng-table.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ng-table-1.0.0-beta.9</tag>
     </scm>
     
     <dependencies>
@@ -72,13 +72,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
