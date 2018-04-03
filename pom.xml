@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ng-table</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.0</version>
     <name>ngTable</name>
     <description>WebJar for ngTable</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/ng-table</url>
         <connection>scm:git:https://github.com/webjars/ng-table.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ng-table.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ng-table-4.0.0</tag>
     </scm>
     
     <dependencies>
@@ -85,15 +85,15 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.css" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.css.map" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.js.map" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.min.css" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.min.css.map" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.min.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/ng-table.min.js.map" dest="${destDir}"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/ng-table.css" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.css.map" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.js" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.min.css" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.min.css.map" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/ng-table.min.js.map" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
